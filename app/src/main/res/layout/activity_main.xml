@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:textSize="35dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_weight="3.5">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/icon_shake" />
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:progress="100"
+                android:progressDrawable="@drawable/progress_drawable" />
+        </LinearLayout>
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/warnmessage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="請遙一遙手機"
+            android:gravity="center_horizontal"
+            android:textSize="35dp" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:textSize="35dp" />
+    </LinearLayout>
+</LinearLayout>
